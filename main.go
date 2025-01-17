@@ -47,6 +47,8 @@ func main() {
 				continue
 			}
 			commandExplore(&cfg, args[0])
+		case "pokedex":
+			commandPokedex(&cfg)
 		case "catch":
 			if len(args) != 1 {
 				fmt.Println("Usage: catch <pokemon-name>")
@@ -206,6 +208,13 @@ func commandInspect(cfg *config, pokemonName string) {
 	fmt.Println("Types:")
 	for _, ptype := range pokemon.Types {
 		fmt.Printf("  - %s\n", ptype.Type.Name)
+	}
+}
+
+func commandPokedex(cfg *config) {
+	fmt.Println("Your Pokedex:")
+	for pokemonName := range cfg.caughtPokemon {
+		fmt.Printf(" - %s\n", pokemonName)
 	}
 }
 
