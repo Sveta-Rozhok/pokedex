@@ -79,3 +79,34 @@ Developed by [Sveta-Rozhok](https://github.com/Sveta-Rozhok)
 
 ## License
 This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+### Clone the repo
+
+```bash
+git clone https://github.com/Sveta-Rozhok/pokedex.git
+cd pokedex
+```
+
+### Build the project
+
+```bash
+go build
+```
+
+### Run the project
+
+```bash
+go run main.go
+```
+
+### Run the tests
+
+```bash
+go test ./...
+```
+
+### Submit a pull request
+
+If you'd like to contribute, please fork the repository and open a pull request to the `main` branch.
